@@ -5,7 +5,15 @@ $form-blue: #89c5c7;
 $form-text-blue: #0b354b;
 $info-yellow: #eab244;
 
-// @import 'Header', 'Local', 'Bikes', 'Signup', 'about';
+// @import 'Header', 'Local', 'Bikes', 'Signup', 'about';???????????????????
+
+// Det virker jo ikke engang uden at importere??????
+
+@use 'scss/Bikes.scss';
+@use 'scss/Header.scss';
+@use 'scss/Local.scss';
+@use 'scss/about.scss';
+@use 'scss/Signup.scss';
 
 body {
     width: 400px;
@@ -16,6 +24,12 @@ body {
 header {
     background-color: $background-red;
     padding-left: 5px;
+}
+
+.logo{
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .local {

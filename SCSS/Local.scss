@@ -1,6 +1,15 @@
 .local {
-    h1 {}
 
-    p {}
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    h1 {
+        background-color: $join-gray;
+    }
+
+    p {
+        color: $info-yellow;
+    }
 
 }
