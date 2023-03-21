@@ -5,41 +5,72 @@ $form-blue: #89c5c7;
 $form-text-blue: #0b354b;
 $info-yellow: #eab244;
 
+// @import 'Header', 'Local', 'Bikes', 'Signup', 'about';
+
+body {
+    width: 400px;
+    margin: auto;
+    background-color: $background-red;
+}
 
 header {
-
-    img {}
+    background-color: $background-red;
+    padding-left: 5px;
 }
 
 .local {
-    h1 {}
 
-    p {}
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 20px;
 
-    p {}
+    h1 {
+        background-color: $join-gray;
+    }
 
-    p {}
+    p {
+        color: $info-yellow;
+    }
+
 }
 
 .bikes {
-
-    img {}
-
+    background-color: $logo-white;
+    text-align: center;
 }
 
 .signup {
 
-    h1 {}
+    h1 {
+        color: $join-gray;
+    }
 
     form {}
 
-    label {}
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
 
-    input {}
+    input {
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
-.about {
-    h1 {}
 
-    p {}
+.about {
+    display: block;
+    background-color: $info-yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+
+    h1 {
+        background-color: $background-red;
+    }
+
+    p {
+        color: $logo-white;
+    }
 }

@@ -1,1 +1,53 @@
-/*# sourceMappingURL=Main.min.css.map */
+body {
+  width: 400px;
+  margin: auto;
+  background-color: #e64448;
+}
+
+header {
+  background-color: #e64448;
+  padding-left: 5px;
+}
+
+.local {
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.local h1 {
+  background-color: #3c3a48;
+}
+.local p {
+  color: #eab244;
+}
+
+.bikes {
+  background-color: #fff;
+  text-align: center;
+}
+
+.signup h1 {
+  color: #3c3a48;
+}
+.signup label {
+  display: block;
+  margin-bottom: 5px;
+}
+.signup input {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.about {
+  display: block;
+  background-color: #eab244;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+.about h1 {
+  background-color: #e64448;
+}
+.about p {
+  color: #fff;
+}/*# sourceMappingURL=Main.min.css.map */
