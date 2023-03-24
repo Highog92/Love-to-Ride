@@ -1,3 +1,5 @@
+@use '/SCSS/Bikes';
+
 $background-red: #e64448;
 $logo-white: #fff;
 $join-gray: #3c3a48;
@@ -9,11 +11,7 @@ $info-yellow: #eab244;
 
 // Det virker jo ikke engang uden at importere??????
 
-@use 'scss/Bikes.scss';
-@use 'scss/Header.scss';
-@use 'scss/Local.scss';
-@use 'scss/about.scss';
-@use 'scss/Signup.scss';
+
 
 body {
     width: 400px;
@@ -59,7 +57,7 @@ header {
         color: $join-gray;
     }
 
-    form {}
+    // form {}
 
     label {
         display: block;
