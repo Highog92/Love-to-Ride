@@ -1,6 +1,6 @@
-@use '/SCSS/Partials/colors';
+@use './colors';
 
 header {
-    background-color: $background-red;
+    background-color: colors.$background-red;
     padding-left: 5px;
 }

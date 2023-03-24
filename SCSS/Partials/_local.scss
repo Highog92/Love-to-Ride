@@ -1,18 +1,18 @@
-@use '/SCSS/Partials/colors';
-@use '/SCSS/Partials/paddings-common';
-@use '/SCSS/Partials/width';
+@use './colors';
+@use './paddings-common';
+@use './widths';
 
 .local {
-    @include paddings;
-    @include widths;
+    @include paddings-common.paddings;
+    @include widths.widths;
 
 
     h1 {
-        background-color: $join-gray;
+        background-color: colors.$join-gray;
     }
 
     p {
-        color: $info-yellow;
+        color: colors.$info-yellow;
     }
 
 }

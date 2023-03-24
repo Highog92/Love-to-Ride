@@ -1,8 +1,8 @@
-@use '/SCSS/Partials/width';
+@use './widths';
 
 
 .logo {
-    @include widths;
+    @include widths.widths;
     padding-top: 10px;
     padding-bottom: 20px;
 }

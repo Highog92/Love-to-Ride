@@ -1,8 +1,8 @@
-@use '/SCSS/Partials/paddings-common';
-@use '/SCSS/Partials/colors';
+@use './paddings-common';
+@use './colors';
 
 .signup {
-    @include paddings;
+    @include paddings-common.paddings;
 
     h1 {
         color: colors.$join-gray;

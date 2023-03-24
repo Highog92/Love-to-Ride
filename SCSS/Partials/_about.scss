@@ -1,17 +1,17 @@
-@use '/SCSS/Partials/paddings-common';
-@use '/SCSS/Partials/colors';
+@use './paddings-common';
+@use './colors';
 
 
 .about {
     display: block;
     background-color: colors.$info-yellow;
-    @include paddings;
+    @include paddings-common.paddings;
 
     h1 {
-        background-color: $background-red;
+        background-color: colors.$background-red;
     }
 
     p {
-        color: $logo-white;
+        color: colors.$logo-white;
     }
 }

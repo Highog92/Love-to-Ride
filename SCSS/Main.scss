@@ -1,13 +1,13 @@
-@use '/SCSS/Partials/colors';
-@use'/SCSS/Partials/paddings-common';
-@use '/SCSS/Partials/width';
-@use '/SCSS/Partials/body-style';
-@use '/SCSS/Partials/header';
-@use '/SCSS/Partials/logo';
-@use '/SCSS/Partials/local';
-@use '/SCSS/Partials/bikes';
-@use '/SCSS/Partials/signup';
-@use '/SCSS/Partials/about';
+@use './Partials/colors';
+@use'./Partials/paddings-common';
+@use './Partials/widths';
+@use './Partials/body-style';
+@use './Partials/header';
+@use './Partials/logo';
+@use './Partials/local';
+@use './Partials/bikes';
+@use './Partials/signup';
+@use './Partials/about';
 
 
 $background-red: #e64448;
@@ -17,84 +17,84 @@ $form-blue: #89c5c7;
 $form-text-blue: #0b354b;
 $info-yellow: #eab244;
 
-@mixin paddings {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-}
+// @mixin paddings {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     padding-left: 5px;
+// }
 
-@mixin widths{
-    width: 80%;
-}
+// @mixin widths{
+//     width: 80%;
+// }
 
-body {
-    width: 400px;
-    margin: auto;
-    background-color:colors.$background-red;
-}
+// body {
+//     width: 400px;
+//     margin: auto;
+//     background-color:colors.$background-red;
+// }
 
-header {
-    background-color: $background-red;
-    padding-left: 5px;
-}
+// header {
+//     background-color: $background-red;
+//     padding-left: 5px;
+// }
 
-.logo {
-    @include widths;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
+// .logo {
+//     @include widths;
+//     padding-top: 10px;
+//     padding-bottom: 20px;
+// }
 
-.local {
-    @include paddings;
-    @include widths;
-
-
-    h1 {
-        background-color: $join-gray;
-    }
-
-    p {
-        color: $info-yellow;
-    }
-
-}
-
-.bikes {
-    background-color: $logo-white;
-    text-align: center;
-}
-
-.signup {
-    @include paddings;
-
-    h1 {
-        color: $join-gray;
-    }
-
-    // form {}
-
-    label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    input {
-        display: block;
-        margin-bottom: 20px;
-    }
-}
+// .local {
+//     @include paddings;
+//     @include widths;
 
 
-.about {
-    display: block;
-    background-color: $info-yellow;
-    @include paddings;
+//     h1 {
+//         background-color: $join-gray;
+//     }
 
-    h1 {
-        background-color: $background-red;
-    }
+//     p {
+//         color: $info-yellow;
+//     }
 
-    p {
-        color: $logo-white;
-    }
-}
+// }
+
+// .bikes {
+//     background-color: $logo-white;
+//     text-align: center;
+// }
+
+// .signup {
+//     @include paddings;
+
+//     h1 {
+//         color: $join-gray;
+//     }
+
+//     // form {}
+
+//     label {
+//         display: block;
+//         margin-bottom: 5px;
+//     }
+
+//     input {
+//         display: block;
+//         margin-bottom: 20px;
+//     }
+// }
+
+
+// .about {
+//     display: block;
+//     background-color: $info-yellow;
+//     @include paddings;
+
+//     h1 {
+//         background-color: $background-red;
+//     }
+
+//     p {
+//         color: $logo-white;
+//     }
+// }
