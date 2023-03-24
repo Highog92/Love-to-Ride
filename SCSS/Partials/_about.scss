@@ -1,0 +1,17 @@
+@use '/SCSS/Partials/paddings-common';
+@use '/SCSS/Partials/colors';
+
+
+.about {
+    display: block;
+    background-color: colors.$info-yellow;
+    @include paddings;
+
+    h1 {
+        background-color: $background-red;
+    }
+
+    p {
+        color: $logo-white;
+    }
+}

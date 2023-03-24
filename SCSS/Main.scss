@@ -1,4 +1,14 @@
-@use '/SCSS/Bikes';
+@use '/SCSS/Partials/colors';
+@use'/SCSS/Partials/paddings-common';
+@use '/SCSS/Partials/width';
+@use '/SCSS/Partials/body-style';
+@use '/SCSS/Partials/header';
+@use '/SCSS/Partials/logo';
+@use '/SCSS/Partials/local';
+@use '/SCSS/Partials/bikes';
+@use '/SCSS/Partials/signup';
+@use '/SCSS/Partials/about';
+
 
 $background-red: #e64448;
 $logo-white: #fff;
@@ -7,16 +17,20 @@ $form-blue: #89c5c7;
 $form-text-blue: #0b354b;
 $info-yellow: #eab244;
 
-// @import 'Header', 'Local', 'Bikes', 'Signup', 'about';???????????????????
+@mixin paddings {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
 
-// Det virker jo ikke engang uden at importere??????
-
-
+@mixin widths{
+    width: 80%;
+}
 
 body {
     width: 400px;
     margin: auto;
-    background-color: $background-red;
+    background-color:colors.$background-red;
 }
 
 header {
@@ -24,17 +38,16 @@ header {
     padding-left: 5px;
 }
 
-.logo{
-    width: 80%;
+.logo {
+    @include widths;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
 .local {
+    @include paddings;
+    @include widths;
 
-    width: 80%;
-    padding-top: 10px;
-    padding-bottom: 20px;
 
     h1 {
         background-color: $join-gray;
@@ -52,6 +65,7 @@ header {
 }
 
 .signup {
+    @include paddings;
 
     h1 {
         color: $join-gray;
@@ -74,9 +88,7 @@ header {
 .about {
     display: block;
     background-color: $info-yellow;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
+    @include paddings;
 
     h1 {
         background-color: $background-red;

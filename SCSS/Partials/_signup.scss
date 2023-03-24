@@ -1,0 +1,22 @@
+@use '/SCSS/Partials/paddings-common';
+@use '/SCSS/Partials/colors';
+
+.signup {
+    @include paddings;
+
+    h1 {
+        color: colors.$join-gray;
+    }
+
+    // form {}
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
